@@ -6,7 +6,7 @@
     --primary-color: #E50914;
     --secondary-color: #B81D24;
     --background-color: #221F1F;
-    --background-color-secondary: #564D4D;
+    --background-color-secondary: #464141;
     --text-color: #dddddd;
     --text-color-secondary: #b9b9b9;
 }
@@ -168,6 +168,149 @@ div.filme a:last-child {
 div.filme a:hover:last-child {
     color: var(--text-color-secondary);
     background-color: var(--secondary-color);
+}
+
+section.filme-resumo {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('../assets/filmes/detalhes-fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.filme-resumo div.filme-img img {
+    height: 50vh;
+}
+
+section.filme-resumo div.filme-info {
+    height: 50vh;
+
+    max-width: 70%;
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section.filme-resumo div.filme-info p {
+    max-width: 70%;
+    font-weight: normal;
+
+    margin-top: 4%;
+}
+
+h2.titulo::before {
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    height: 1.3rem;
+    background-color: red;
+
+    margin-left: -0.5%;
+}
+
+section.filme-info {
+    margin: 3%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section.filme-info h2 {
+    font-size: 1.3rem;
+}
+
+div.botoes {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 50%;
+}
+
+div.botoes a {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    margin: 0 0.5rem;
+}
+
+div.elenco {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 70%;
+}
+
+div.elenco div.atores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 5rem;
+}
+
+div.ator {
+    background-color: var(--background-color-secondary);
+
+    width: 10rem;
+    height: 12rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+div.ator img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-top: -5rem;
+}
+
+div.ator p {
+    font-weight: normal;
+}
+
+div.ator p.ator-personagem {
+    color: var(--text-color-secondary);
+}
+
+aside.ficha-tecnica {
+    align-self: flex-end;
+
+    margin-top: -50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--background-color-secondary);
+
+    max-width: 15%;
+
+    padding: 1rem;
+}
+
+aside.ficha-tecnica div.item-tecnico {
+    margin: 0.5rem 0;
+}
+
+aside.ficha-tecnica div.item-tecnico p.item-valor {
+    font-weight: normal;
+    color: var(--text-color-secondary);
 }
 
 
