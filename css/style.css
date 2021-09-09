@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: #E50914;
-    --secondary-color: #B81D24;
+    --secondary-color: #F06;
     --background-color: #221F1F;
     --background-color-secondary: #464141;
     --text-color: #dddddd;
@@ -312,6 +312,64 @@ aside.ficha-tecnica div.item-tecnico {
 aside.ficha-tecnica div.item-tecnico p.item-valor {
     font-weight: normal;
     color: var(--text-color-secondary);
+}
+
+section.integrantes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
+}
+
+section.integrantes div.integrante {
+    width: 10rem;
+    height:10rem;
+    background-color: #464141;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    color:var(--text-color);
+    align-items: center;
+    font-family: 'Trebuchet MS';
+
+    margin: 1rem;
+
+    text-align: center;
+}
+
+div.integrante img {
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+}
+
+div.sobre-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.sobre-projeto p {
+    text-align: justify;
+    max-width: 70%;
+    margin: 2rem auto;
+}
+
+div.sobre-projeto a {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.2s ease all;
+}
+
+div.sobre-projeto a:hover {
+    color: var(--text-color-secondary);
+    background-color: var(--primary-color);
 }
 
 
