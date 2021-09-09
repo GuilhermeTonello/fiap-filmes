@@ -1,0 +1,22 @@
+.Card{
+    width: 10rem;
+    height:10rem;
+    background-color: #464141;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    color:#ddd;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+}
+
+.Card p{
+    margin:0
+}
+
+.ProfilePhoto{
+    margin-top: 0.2rem;
+    border-radius: 100%;
+    width: 7rem;
+    height: 7rem;
+}
