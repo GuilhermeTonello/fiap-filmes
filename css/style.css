@@ -85,6 +85,8 @@ section#capa {
     background-size: cover;
     width: 100%;
     height: 60vh;
+    z-index: -1;
+    box-shadow: inset 0px -2rem 2rem var(--background-color);
 }
 
 section p {
@@ -93,6 +95,8 @@ section p {
 
 section#capa div.main-content-wrapper {
     position: absolute;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -100,7 +104,7 @@ section#capa div.main-content-wrapper p {
     position: relative;
     font-size: 2.3rem;
     max-width: 70%;
-    margin-top: 50%;
+    margin-top: 30%;
     margin-left: 10%;
 }
 
@@ -314,6 +318,12 @@ aside.ficha-tecnica div.item-tecnico p.item-valor {
     color: var(--text-color-secondary);
 }
 
+.botao:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.0))
+      drop-shadow(0px 0px 9px #E50914);
+    transition: all 0.2s;
+  }
+
 
 @media screen and (max-width: 1000px) {
 
@@ -357,13 +367,17 @@ aside.ficha-tecnica div.item-tecnico p.item-valor {
 
 }
 
+.ativo{
+border-bottom: 3px solid var(--primary-color);
+padding-bottom: 0.2rem;
+}
+
 @media screen and (max-width: 767px) {
 
     section#capa div.main-content-wrapper p {
         position: relative;
         font-size: 2.3rem;
         max-width: 70%;
-        margin-top: 70%;
         margin-left: 10%;
     }
 
@@ -401,3 +415,5 @@ aside.ficha-tecnica div.item-tecnico p.item-valor {
         margin: 3rem 0;
     }
 }
+
+
