@@ -335,15 +335,14 @@ section.integrantes {
 }
 
 section.integrantes div.integrante {
-    width: 10rem;
-    height:10rem;
+    width: 11rem;
+    height:11rem;
     background-color: #464141;
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
     color:var(--text-color);
     align-items: center;
-    font-family: 'Trebuchet MS';
 
     margin: 1rem;
 
@@ -354,6 +353,7 @@ div.integrante img {
     border-radius: 100%;
     width: 7rem;
     height: 7rem;
+	object-fit: cover;
 }
 
 div.sobre-projeto {
@@ -367,6 +367,17 @@ div.sobre-projeto p {
     text-align: justify;
     max-width: 70%;
     margin: 2rem auto;
+}
+
+div.sobre-projeto p a {
+	background: none;
+	padding: 0;
+	border-radius: 0;
+	color: var(--secondary-color);
+}
+div.sobre-projeto p a:hover {
+	background: none;
+	color: var(--primary-color);
 }
 
 div.sobre-projeto a {
