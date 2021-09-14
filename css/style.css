@@ -148,6 +148,7 @@ div.filme {
 
 div.filme img {
     width: 9rem;
+    border-radius: 0.5rem;
 }
 
 div.filme p {
