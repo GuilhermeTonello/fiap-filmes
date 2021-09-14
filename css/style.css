@@ -523,6 +523,21 @@ padding-bottom: 0.2rem;
         align-items: center;
         justify-content: center;
     }
+
+    h2::before{
+        display: none;
+    }
+
+    h2{
+        display: flex;
+        border-left: var(--primary-color) solid 5px;
+        padding-left: .2rem;
+        margin-bottom: 1rem;
+    }
+
+    a.botao{
+        margin-bottom: 0.25rem;
+    }
 }
 
 
