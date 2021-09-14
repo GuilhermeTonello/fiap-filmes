@@ -349,6 +349,12 @@ section.integrantes div.integrante {
     text-align: center;
 }
 
+section.integrantes div:hover{
+    color: var(--secondary-color);
+    filter: saturate(1.33);
+    filter:brightness(1.1);
+}
+
 div.integrante img {
     border-radius: 100%;
     width: 7rem;
