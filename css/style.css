@@ -285,6 +285,7 @@ div.ator img {
     height: 7rem;
     border-radius: 50%;
     margin-top: -5rem;
+    object-fit: cover;
 }
 
 div.ator p {
