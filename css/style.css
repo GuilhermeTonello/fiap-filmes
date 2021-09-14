@@ -490,4 +490,30 @@ padding-bottom: 0.2rem;
     }
 }
 
+@media screen and (max-width: 425px) {
+    
+    div.nav-wrapper a{
+        display: block;
+        margin: 0.1rem;
+        padding-top: 0.5rem;  
+    }
+
+    div.nav-wrapper{
+        display: flex;
+        flex-direction: column !important;
+        align-self: center !important;
+        justify-content: center;
+        justify-self: center;
+        padding-bottom: 0.5rem;
+    }
+
+    ul{
+        display: flex !important;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
