@@ -381,6 +381,7 @@ div.sobre-projeto p {
 }
 
 div.sobre-projeto p a {
+    overflow-wrap: break-word;
 	background: none;
 	padding: 0;
 	border-radius: 0;
