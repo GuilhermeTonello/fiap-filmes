@@ -177,7 +177,6 @@ div.filme a:hover:last-child {
 }
 
 section.filme-resumo {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('../assets/filmes/detalhes-fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
