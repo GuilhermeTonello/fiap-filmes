@@ -29,12 +29,12 @@ function gerarFilmes() {
     }
 }
 
-function gerarFilmeDetails() {
+function gerarFilmeDetails(filmeId) {
     let filmeSinopse = document.querySelector('section.filme-resumo');
     let filmeInfo = document.querySelector('section.filme-info');
     let fichaTecnica = document.querySelector('aside.ficha-tecnica');
 
-    fetch(`https://api.themoviedb.org/3/movie/${getUrlParam('filme')}?api_key=c9680c5e8dedd8ce95289c14748165f9&language=en-US&append_to_response=credits`)
+    fetch(`https://api.themoviedb.org/3/movie/${filmeId}?api_key=c9680c5e8dedd8ce95289c14748165f9&language=en-US&append_to_response=credits`)
         .then(res => res.json())
         .then(filme => {
             filmeSinopse.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('https://image.tmdb.org/t/p/original${filme.backdrop_path}')`;
@@ -96,6 +96,6 @@ window.addEventListener("load", evento => {
     if (url.indexOf("index.html") > -1) {
         gerarFilmes();
     } else if (url.indexOf("detalhes.html") > -1 && getUrlParam('filme') != null) {
-        gerarFilmeDetails();
+        gerarFilmeDetails(getUrlParam('filme'));
     }
 });
