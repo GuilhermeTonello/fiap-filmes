@@ -88,7 +88,6 @@ function gerarFilmeDetails(filmeId) {
                 </div>
             `);
         });
-    console.log('oi');
 }
 
 window.addEventListener("load", evento => {
